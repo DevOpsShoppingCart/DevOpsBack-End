@@ -9,6 +9,8 @@ env:
   REGISTRY: docker.io 
   # dockerhub.repository as <account>/<repo> 
   IMAGE_NAME: ${{ secrets.DOCKER_USERNAME }}/node-client_app 
+  DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+
 jobs: 
   build: 
     runs-on: ubuntu-latest 
